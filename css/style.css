@@ -1,0 +1,70 @@
+.float{
+  z-index:1;
+  position:fixed;
+  width:50px;
+  height:50px;
+  bottom:20px;
+  right:20px;
+  background-color:#00a65a;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+.float:hover{
+  background-color:#008d4c;
+}
+.my-float{
+  margin-top:14px;
+}
+.badge {
+  padding: 1px 9px 2px;
+  font-size: 21px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #999999;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.badge:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.badge-old {
+  background-color: #00a65a;
+}
+.badge-old:hover {
+  background-color: #008d4c;
+}
+#page {
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.3);
+}
+#loading {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  z-index:9999;
+  width: 100px;
+  height: 100px;
+  border: 16px solid #bababa;
+  border-radius: 100%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
